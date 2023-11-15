@@ -15,7 +15,7 @@ docker build -t sagemaker-ssh .
 ```
 docker tag sagemaker-ssh:latest <put your ecr registry here>/sagemaker-ssh:latest
 ```
-- Login to your ECR
+- Login to your ECR. Your can find the login instruction in the ECR console.
 ```
 aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <put your ecr registry here>
 ```
